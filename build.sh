@@ -18,7 +18,7 @@ sh firmware-imx-8.14.bin
 cd ..
 
 # Get and build ARM trusted firmware
-git clone -b imx_5.4.70_2.3.0 https://source.codeaurora.org/external/imx/imx-atf
+git clone https://github.com/stephengw/imx-atf
 cd imx-atf
 make CROSS_COMPILE=aarch64-linux-gnu- PLAT=imx8mq
 cd ..
