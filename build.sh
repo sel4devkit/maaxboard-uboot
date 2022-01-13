@@ -44,8 +44,8 @@ cd ..
 cp imx-mkimage/iMX8M/flash.bin .
 
 # Provide some guidance on usage
-echo "+--------------------------------------------------------------------------------+"
-echo "| MaaxBoard U-Boot binary generated at ./lash.bin                                |"
-echo "| Binary can be written to an SD card with command:                              |"
-echo "|    dd if=imx-mkimage/iMX8M/flash.bin of=/dev/<SD card device id> bs=1k seek=33 |"
-echo "+--------------------------------------------------------------------------------+"
+echo "+----------------------------------------------------------------+"
+echo "|  MaaxBoard U-Boot binary generated at ./flash.bin              |"
+echo "|  Binary can be written to an SD card with command:             |"
+echo "|     dd if=flash.bin of=/dev/<SD card device id> bs=1k seek=33  |"
+echo "+----------------------------------------------------------------+"
