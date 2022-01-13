@@ -12,10 +12,8 @@ make maaxboard_defconfig
 make
 cd ..
 
-# Get and decompress the DDR / HDMI firmware
-mkdir firmware
+# Decompress the DDR PHY / HDMI firmware supplied ny NXP
 cd firmware
-wget https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/firmware-imx-8.14.bin
 sh firmware-imx-8.14.bin
 cd ..
 
