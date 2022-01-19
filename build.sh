@@ -1,4 +1,3 @@
-#
 #!/bin/bash
 #
 # Script for building the u-boot binary (flash.bin) for the Avnet MaaxBoard
@@ -6,20 +5,20 @@
 
 # Build the u-boot binaries
 git clone https://github.com/stephengw/uboot-imx
-cd uboot-imx
+cd uboot-imx || exit
 export CROSS_COMPILE=aarch64-linux-gnu-
 make maaxboard_defconfig
 make
 cd ..
 
 # Decompress the DDR PHY / HDMI firmware supplied ny NXP
-cd firmware
+cd firmware || exit
 sh firmware-imx-8.14.bin
 cd ..
 
 # Get and build ARM trusted firmware
 git clone https://github.com/stephengw/imx-atf
-cd imx-atf
+cd imx-atf || exit
 make CROSS_COMPILE=aarch64-linux-gnu- PLAT=imx8mq
 cd ..
 
@@ -38,7 +37,7 @@ cp firmware/firmware-imx-8.14/firmware/ddr/synopsys/ddr4_dmem_2d_202006.bin imx-
 cp imx-atf/build/imx8mq/release/bl31.bin imx-mkimage/iMX8M
 
 # Build the image
-cd imx-mkimage
+cd imx-mkimage || exit
 make SOC=iMX8MQ flash_ddr4_val_no_hdmi
 cd ..
 cp imx-mkimage/iMX8M/flash.bin .
