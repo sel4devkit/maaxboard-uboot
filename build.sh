@@ -4,7 +4,7 @@
 #
 
 # Build the u-boot binaries
-git clone https://github.com/stephengw/uboot-imx
+git clone https://github.com/sel4devkit/uboot-imx
 cd uboot-imx || exit
 export CROSS_COMPILE=aarch64-linux-gnu-
 make maaxboard_defconfig
@@ -17,13 +17,13 @@ sh firmware-imx-8.14.bin
 cd ..
 
 # Get and build ARM trusted firmware
-git clone https://github.com/stephengw/imx-atf
+git clone https://github.com/sel4devkit/imx-atf
 cd imx-atf || exit
 make CROSS_COMPILE=aarch64-linux-gnu- PLAT=imx8mq
 cd ..
 
 # Get the imx-mkimage tools
-git clone https://github.com/stephengw/imx-mkimage
+git clone https://github.com/sel4devkit/imx-mkimage
 
 # Copy the binaries, firmware and device tree into the imx-mkimage area
 cp uboot-imx/spl/u-boot-spl.bin imx-mkimage/iMX8M
