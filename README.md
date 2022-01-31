@@ -1,6 +1,6 @@
 # MaaXBoard-Uboot
 
-This repository contains a script and build area for building u-boot for the Avnet MaaxBaord.
+This repository contains a script and build area for building u-boot for the Avnet MaaXBoard.
 
 During the build process the following directories will be used / created:
 
