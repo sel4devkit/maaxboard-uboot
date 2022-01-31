@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Script for building the u-boot binary (flash.bin) for the Avnet MaaxBoard
+# Script for building the u-boot binary (flash.bin) for the Avnet MaaXBoard
 #
 
 # Build the u-boot binaries
