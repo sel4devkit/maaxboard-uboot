@@ -11,7 +11,7 @@ make maaxboard_defconfig
 make
 cd ..
 
-# Decompress the DDR PHY / HDMI firmware supplied ny NXP
+# Decompress the DDR PHY / HDMI firmware supplied by NXP
 cd firmware || exit
 sh firmware-imx-8.14.bin
 cd ..
