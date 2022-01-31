@@ -9,7 +9,7 @@ During the build process the following directories will be used / created:
 - **imx-mkimage**: This directory is used to checkout and build a fork of the mkimage tool modified by Avnet for the MaaXBoard that combines the various elements into a single image suitable for writing to an SD card.
 - **uboot-imx**: This directory is used to checkout and build a fork of U-Boot modified by Avnet for the MaaXBoard.
 
-On completion of the build process the **flash.bin** file is generated in the top level directory alongside the build script. This file can then to written to an SD card suitable for booting the MaaxBoard with the following command:
+On completion of the build process the **flash.bin** file is generated in the top level directory alongside the build script. This file can then to written to an SD card suitable for booting the MaaXBoard with the following command:
 ```
 dd if=flash.bin of=/dev/<SD card device id> bs=1k seek=33 
 ```
