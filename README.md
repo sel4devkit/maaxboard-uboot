@@ -2,7 +2,7 @@
 
 This repository contains a script and build area for building u-boot for the Avnet MaaXBoard.
 
-## Building
+# Building
 Run `build.sh` to build normally.
 For offline building, first run `clone.sh` to clone the required source code. `build-offline.sh` can then be run without an internet connection.
 
