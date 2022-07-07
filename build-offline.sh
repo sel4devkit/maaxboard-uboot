@@ -3,8 +3,6 @@
 # Script for building the u-boot binary (flash.bin) for the Avnet MaaXBoard
 #
 
-/bin/bash ./clone.sh
-
 # Build the u-boot binaries
 cd uboot-imx || exit
 export CROSS_COMPILE=aarch64-linux-gnu-
