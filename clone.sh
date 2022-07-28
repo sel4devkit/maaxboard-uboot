@@ -1,5 +1,11 @@
 #!/bin/bash
 #
+# Copyright 2022 Capgemini Engineering
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
+
+#
 # Script for downloading the u-boot source for the Avnet MaaXBoard
 #
 
