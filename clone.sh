@@ -11,10 +11,7 @@
 
 # Clone the u-boot source
 echo "Cloning U-Boot source code..."
-git clone https://github.com/Avnet/uboot-imx.git
-cd uboot-imx 
-git checkout f752480a4c29d3ff7fd4008863adc286019bf594
-cd ..
+git clone https://github.com/sel4-cap/uboot-imx
 
 # Clone ARM trusted firmware
 echo "Cloning ARM Trusted Firmware..."
