@@ -36,11 +36,12 @@ cp firmware/firmware-imx-8.14/firmware/ddr/synopsys/ddr4_imem_1d_202006.bin imx-
 cp firmware/firmware-imx-8.14/firmware/ddr/synopsys/ddr4_imem_2d_202006.bin imx-mkimage/iMX8M/ddr4_imem_2d.bin
 cp firmware/firmware-imx-8.14/firmware/ddr/synopsys/ddr4_dmem_1d_202006.bin imx-mkimage/iMX8M/ddr4_dmem_1d.bin
 cp firmware/firmware-imx-8.14/firmware/ddr/synopsys/ddr4_dmem_2d_202006.bin imx-mkimage/iMX8M/ddr4_dmem_2d.bin
+cp firmware/firmware-imx-8.14/firmware/hdmi/cadence/signed_hdmi_imx8m.bin imx-mkimage/iMX8M/signed_hdmi_imx8m.bin
 cp imx-atf/build/imx8mq/release/bl31.bin imx-mkimage/iMX8M
 
 # Build the image
 cd imx-mkimage || exit
-make SOC=iMX8MQ flash_ddr4_val_no_hdmi
+make SOC=iMX8MQ flash_ddr4_val
 cd ..
 cp imx-mkimage/iMX8M/flash.bin .
 
